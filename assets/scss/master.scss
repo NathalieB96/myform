@@ -9,4 +9,55 @@ body {
     color: #292929;
 }
 
-@import 'components/form';
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 500px;
+    padding: 1rem 2rem;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.15);
+}
+
+.small {
+    font-size: 0.6rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.form-item {
+    width: 100%;
+    margin-bottom: 1rem;
+
+    &__small {
+        width: 48%;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 0.4rem 0.2rem;
+        margin-top: 0.5rem;
+    }
+
+    &__select {
+        width: 30%;
+        padding: 0.4rem 0.2rem;
+        margin-top: 0.5rem;
+    }
+
+    &__checkbox {
+        margin: 0;
+    }
+}
+
+input[type=submit] {
+    width: 30%;
+    border: none;
+    background-color: #0F8B8D;
+    border-radius: 6px;
+    padding: 0.3rem 0rem;
+    color: #fff;
+}
