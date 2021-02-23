@@ -45,3 +45,28 @@ if ($descriptiontext != '') {
 
 
     /*
+     *-----------------------------------------------------------------------------------------------------------*
+        * PHP Mailer Script to send emails through contact form
+     *-----------------------------------------------------------------------------------------------------------*
+     */
+    
+    $title = $_POST['title'];
+    $fullname = $_POST['fullname'];
+    $email = $_POST['email'];
+    $request = $_POST['request'];
+    $descriptiontext = $_POST['descriptiontext'];
+    
+    
+    $to = "$email";
+    $subject = 'Formular Daten';
+    $message = "Hallo $fullname hier sind deine übermittelten Daten: \n $title $fullname \n $email \n $request \n $descriptiontext"; 
+    $from = 'nathalie.buettner@code.berlin';
+     
+    // Sending email
+    if(mail($to, $subject, $message)){
+        echo 'Sie erhalten gleich eine Bestätigungsemail mit Ihren Daten.';
+    } else{
+        echo 'E-Mail konnte nicht versendet werden';
+    }
+    
+?>
