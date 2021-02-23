@@ -1,13 +1,18 @@
 body {
-  background-color: #13293D;
+  background-color: #E5E5F0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+  height: 100vh;
+  color: #292929;
 }
 
 .container {
@@ -15,9 +20,56 @@ body {
   border-radius: 10px;
   width: 500px;
   padding: 1rem 2rem;
+  -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
 }
 
 .small {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-item {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-item__small {
+  width: 48%;
+}
+
+.form-item__input {
+  width: 100%;
+  padding: 0.4rem 0.2rem;
+  margin-top: 0.5rem;
+}
+
+.form-item__select {
+  width: 30%;
+  padding: 0.4rem 0.2rem;
+  margin-top: 0.5rem;
+}
+
+.form-item__checkbox {
+  margin: 0;
+}
+
+input[type=submit] {
+  width: 30%;
+  border: none;
+  background-color: #0F8B8D;
+  border-radius: 6px;
+  padding: 0.3rem 0rem;
+  color: #fff;
 }
 /*# sourceMappingURL=master.css.map */
