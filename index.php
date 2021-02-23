@@ -20,7 +20,42 @@
 </head>
 
 <body id="top">
-test
+	<section>
+	<form action="form-processing.php" method="post">
+			
+			<label for="title">Anrede*</label>
+			<input type="text" id="title" name="title" required><br>
+			<label for="fullname">Name*</label>
+			<input type="text" id="fullname" name="fullname" required><br>
+			<label for="email">E-Mail*</label>
+			<input type="text" id="email" name="email" required>
+			<span class="error" id="invalid_email">Diese E-Mail ist ungültig</span><br>
+			
+			<div class="form-group">
+			<label for="request">Anfrage*</label><br>
+			<select id="request" name="request" required>
+				<option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+			</select><br>
+			</div>
+
+			<div class="form-group" id="descriptiontext_div">
+				<label for="descriptiontext">Beschreibungstext:</label>
+				<input type="text" id="descriptiontext" name="descriptiontext"><br>
+			</div>
+
+			<input type="checkbox" name="dataprivacy" id="dataprivacy" required />
+			<label for="dataprivacy">Ich habe die Datenschutzerklärung zur Kenntnis genommen. Ich stimme zu, dass meine Angaben und Daten zur Beantwortung meiner Anfrage elektronisch erhoben und gespeichert werden.</label>
+			<br>
+
+			<input type="submit" id="submit">
+		</form>
+	
+	
+	</section>
+
+
 </body>
 
 <footer></footer>
