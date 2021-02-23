@@ -67,6 +67,8 @@
 
 	<footer>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+	<script src="<?php echo DOMAIN; ?>/assets/js/form.js"></script>
 
 </body>
 </html>
