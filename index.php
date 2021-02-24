@@ -26,18 +26,18 @@
 	<form action="form-processing.php" method="post">
 			
 			<div class="form-item form-item__small">
-				<label for="title">Anrede*</label><br>
+				<label for="title">Anrede*</label>
 				<input class="form-item__input" type="text" id="title" name="title" required>
 			</div>
 			<div class="form-item form-item__small">
-				<label for="fullname">Name*</label><br>
+				<label for="fullname">Name*</label>
 				<input class="form-item__input" type="text" id="fullname" name="fullname" required><br>
 			</div>
 
 			<div class="form-item">
-				<label for="email">E-Mail*</label><br>
+				<label for="email">E-Mail*</label>
 				<input class="form-item__input" type="text" id="email" name="email" required><br>
-				<span class="error" id="invalid_email">Diese E-Mail ist ungültig</span><br>
+				<span class="form-item__span error" id="invalid_email">Diese E-Mail ist ungültig</span><br>
 			</div>
 
 			<div class="form-item">
@@ -49,12 +49,12 @@
 			</select><br>
 			</div>
 
-			<div class="form-item" id="descriptiontext_div"><br>
+			<div class="form-item" id="descriptiontext_div">
 				<label for="descriptiontext">Beschreibungstext:</label>
 				<input class="form-item__input" type="text" id="descriptiontext" name="descriptiontext"><br>
 			</div>
 
-			<div class="form-item">
+			<div class="form-item form-item__dataprivacy">
 				<input class="form-item__checkbox" type="checkbox" name="dataprivacy" id="dataprivacy" required />
 				<label for="dataprivacy" class="small">Ich habe die Datenschutzerklärung zur Kenntnis genommen. Ich stimme zu, dass meine Angaben und Daten zur Beantwortung meiner Anfrage elektronisch erhoben und gespeichert werden.</label>
 			</div>
