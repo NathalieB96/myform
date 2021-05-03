@@ -6,12 +6,13 @@ To show that the database works I included a screenvideo.
 –––––
 ## About this Repository
 This Repository contains the whole code of the project. 
-Following functionalites are implemented:
+
+Following functionalities are implemented:
 - email validation & mailing
 - sqlite3 database
 
 ## Architectural Overview
-(assets/imag/my-form_software-architecture.jpg)
+(assets/img/my-form_software-architecture.jpg)
 
 –––––
 ## Setup Instructions
@@ -20,5 +21,5 @@ You can also search for define to locate the line.
 
 –––––
 
-Verwendete Skripte:
+Used scripts:
 - jQuery
